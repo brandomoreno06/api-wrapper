@@ -101,7 +101,7 @@ end
 #### Utilizing the wrapper inside controllers.
 Example: Get list of games
 
-To get the list of games, create a method index inside the games (or any) controller. Then inside this method, call `Rawg::Client.games`. The method `games` can be found inside th module `Rawg`, class `Client` from the `client.rb` file. Explicitly call the render method and pass the key-value pair `json: games` so when the controller method is called, it will return the object `games` in `json format`.
+To get the list of games, create a method index inside the games (or any) controller. Then inside this method, call `Rawg::Client.games`. The method `games` of class `Rawg::Client` can be found inside the module `Rawg`, class `Client` from the `client.rb` file. Explicitly call the render method and pass the key-value pair `json: games` so when the controller method is called, it will return the object `games` in `json format`.
 ```
     def index
       games = Rawg::Client.games
