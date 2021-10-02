@@ -109,6 +109,17 @@ To get the list of games, create a method index inside the games (or any) contro
       render json: games
     end
 ```
+
+#### Calling API via URL
+```
+    get '{URL}/games/stores' - returns list of stores that sell games
+    get '{URL}/games' - returns list of games
+    get '{URL}/games/:id' - return details of the game
+    get '{URL}/games/:id/posts' - returns latest reddit posts for the games
+    get '{URL}/games/:id/trailers' - returns list of trailers for the game
+    
+    id - ID or a slug of the game
+```
  
 
 
